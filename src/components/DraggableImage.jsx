@@ -28,8 +28,7 @@ const DraggableImage = ({ src, id, canvasRef }) => {
   const stopDragging = () => {
     setDragging(false);
   };
-
-  // Attach global listeners for consistent dragging
+  
   useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseup', stopDragging);
